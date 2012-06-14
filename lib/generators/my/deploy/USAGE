@@ -1,0 +1,5 @@
+Description:
+    The my_deploy generator creates deploy files
+
+Examples:
+    rails g my:deploy blank 10.1.1.8 domain.com

@@ -1,0 +1,25 @@
+= My Generators
+
+A collection of useful Rails generator scripts.
+
+
+== Setup
+
+=== Rails 3
+
+Add the gem to your Gemfile.
+
+  gem "my_generators", :group => :development, :git => 'git://github.com/alobato/my_generators.git'
+
+Then you can run any of the included generators.
+
+  rails g my:deploy app_name 10.1.1.8 mydomain.com
+
+
+== Included Generators
+
+* my:deploy: generates deploy files.
+
+To view the README for each generator, run it with the +help+ option.
+
+  rails g my:deploy --help
