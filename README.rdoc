@@ -9,11 +9,12 @@ A collection of useful Rails generator scripts.
 
 Add the gem to your Gemfile.
 
-  gem "my_generators", :group => :development, :git => 'git://github.com/alobato/my_generators.git'
+  gem 'my_generators', :group => :development, :git => 'git://github.com/alobato/my_generators.git'
 
 Then you can run any of the included generators.
 
-  rails g my:deploy app_name 10.1.1.8 mydomain.com
+  $ bundle exec rails g my:deploy app_name 10.1.1.8 mydomain.com
+  $ chmod +x config/unicorn_init.sh
 
 
 == Included Generators
