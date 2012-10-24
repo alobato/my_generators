@@ -1,6 +1,7 @@
 require "bundler/capistrano"
 
 server "<%= server_ip %>", :web, :app, :db, primary: true
+ssh_options[:port] = 888
 
 set :application, "<%= app_name %>"
 set :user, "deployer"
