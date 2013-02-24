@@ -3,10 +3,10 @@ require "bundler/capistrano"
 load "config/recipes/base"
 load "config/recipes/rbenv"
 load "config/recipes/nginx"
-load "config/recipes/mysql"
 load "config/recipes/nodejs"
 load "config/recipes/check"
 load "config/recipes/unicorn"
+load "config/recipes/mysql"
 
 server "<%= server_ip %>", :web, :app, :db, primary: true
 ssh_options[:port] = 888
@@ -25,9 +25,9 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 set :default_environment, {
-  "RACK_ENV": "production",
-  "RAILS_ENV": "production",
-  "PATH": "/home/deployer/.rbenv/shims:/home/deployer/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+  "RACK_ENV" => "production",
+  "RAILS_ENV" => "production",
+  "PATH" => "/home/deployer/.rbenv/shims:/home/deployer/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
 }
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
