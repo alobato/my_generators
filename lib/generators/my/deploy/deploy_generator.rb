@@ -24,7 +24,7 @@ module My
         template "recipes/rbenv.rb", "config/recipes/rbenv.rb"
         template "recipes/nginx.rb", "config/recipes/nginx.rb"
         template "recipes/mysql.rb", "config/recipes/mysql.rb"
-        template "recipes/nrecipes/nodejs.rb", "config/recipes/nodejs.rb"
+        template "recipes/nodejs.rb", "config/recipes/nodejs.rb"
         template "recipes/unicorn.rb", "config/recipes/unicorn.rb"
         template "recipes/check.rb", "config/recipes/check.rb"
       end
