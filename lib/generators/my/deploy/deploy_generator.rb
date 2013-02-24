@@ -20,6 +20,13 @@ module My
         template "unicorn.rb", "config/unicorn.rb"
         template "unicorn_init.sh", "config/unicorn_init.sh"
         template "nginx.conf", "config/nginx.conf"
+        template "recipes/base.rb", "config/recipes/base.rb"
+        template "recipes/rbenv.rb", "config/recipes/rbenv.rb"
+        template "recipes/nginx.rb", "config/recipes/nginx.rb"
+        template "recipes/mysql.rb", "config/recipes/mysql.rb"
+        template "recipes/nrecipes/odejs.rb", "config/recipes/nodejs.rb"
+        template "recipes/unicorn.rb", "config/recipes/unicorn.rb"
+        template "recipes/check.rb", "config/recipes/check.rb"
       end
 
       private
