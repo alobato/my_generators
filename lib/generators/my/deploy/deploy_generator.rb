@@ -8,7 +8,7 @@ module My
       argument :domain, :type => :string, :default => '', :banner => 'domain'
 
       def add_gems
-        add_gem 'capistrano', '2.14.2'
+        add_gem 'capistrano', '2.13.5'
         add_gem 'unicorn', '4.6.2'
         add_gem 'mysql2', '0.3.11'
       end
