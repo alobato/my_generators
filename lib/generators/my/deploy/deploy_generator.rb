@@ -9,8 +9,7 @@ module My
 
       def add_gems
         add_gem 'capistrano', '2.14.2'
-        add_gem 'unicorn', '4.6.1'
-        add_gem 'net-ssh', '2.6.5'
+        add_gem 'unicorn', '4.6.2'
         add_gem 'mysql2', '0.3.11'
       end
 
